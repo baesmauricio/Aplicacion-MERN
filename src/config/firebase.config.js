@@ -6,7 +6,7 @@
 
 // // Your web app's Firebase configuration
 // const firebaseConfig = {
-//   apiKey: "AIzaSyDlZoNQPvPAN8iwWr9bBm_kns5-nHMtXWE",  //actualizada, 
+//   ,  //actualizada, 
 //   authDomain:"storeudd-ba973.firebaseapp.com",
 //   projectId: "storeudd-ba973",
 //   storageBucket: "storeudd-ba973.firebasestorage.app",
