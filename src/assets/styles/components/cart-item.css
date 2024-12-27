@@ -133,3 +133,34 @@
     background-color: #e51c1c;
 }
 
+.button {
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button-pay {
+    background-color: #009ee3; 
+    color: 000000; 
+  }
+  
+  .button-pay:hover {
+    background-color: #007bb2; 
+    transform: scale(1.05); 
+  }
+  
+  .button-pay:disabled {
+    background-color: #007bb2; /* Fondo para estado deshabilitado */
+    color: 000000; /* Texto más tenue */
+    cursor: not-allowed; /* Cursor deshabilitado */
+  }
+
+ 
