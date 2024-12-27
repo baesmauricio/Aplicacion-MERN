@@ -10,7 +10,7 @@ export const apiProductsClients = axios.create({
 export const getAllProducts = async () => {
     try {
         const { data } = await apiProductsClients.get('/product')
-        console.log("aca llegan los productos", data)
+        
         return data
     } catch (error) {
         console.error(error)

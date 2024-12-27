@@ -5,7 +5,7 @@
     padding: 1rem;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    background-color: #f9f9f9;
+    background-color: #F8FCEA;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -13,7 +13,7 @@
 }
 
 .cart-list h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-align: center;
     color: #333;
     margin-bottom: 1rem;
@@ -23,15 +23,15 @@
 .cart-item {
     display: grid;
     grid-template-columns: 80px 1fr auto;
-    gap: 1rem;
+    gap: 3rem;
     align-items: center;
     padding: 0.5rem;
     border-bottom: 1px solid #ddd;
 }
 
 .cart-item__image {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 150px;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -44,12 +44,12 @@
 }
 
 .cart-item__details h3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #333;
 }
 
 .cart-item__details p {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     color: #555;
     margin: 0;
 }
@@ -95,7 +95,7 @@
     color: #fff;
     border: none;
     padding: 0.3rem 0.6rem;
-    font-size: 0.85rem;
+    font-size: 1rem;
     cursor: pointer;
     border-radius: 4px;
     transition: background-color 0.3s ease;
@@ -113,13 +113,13 @@
 }
 
 .cart-total h3 {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     color: #333;
     margin-bottom: 1rem;
 }
 
 .cart-total .button-clear {
-    background-color: #ff4d4d;
+    background-color:#ff4d4d;
     color: #fff;
     border: none;
     padding: 0.6rem 1rem;
@@ -130,5 +130,6 @@
 }
 
 .cart-total .button-clear:hover {
-    background-color: #e60000;
+    background-color: #e51c1c;
 }
+

@@ -28,8 +28,7 @@ export const ProductList = () => {
         const fetchProducts = async () => {
             try {
                 // Llamada a la API para obtener productos
-                const data = await getAllProducts();
-                console.log("aquieeeee", data); // (Opcional) Para depuración, muestra los datos obtenidos
+                const data = await getAllProducts(); // (Opcional) Para depuración, muestra los datos obtenidos
                 setProducts(data); // Actualiza el estado con los productos obtenidos
             } catch (err) {
                 // Manejo de errores
@@ -57,6 +56,7 @@ export const ProductList = () => {
     // Renderiza la lista de productos o un mensaje si no hay productos disponibles
     return (
         <div className="product-list">
+                
             {
                 products.length > 0 ? (
                     products.map((product) => (

@@ -2,10 +2,29 @@
 export const AboutPage = () => {
     return (
         <>
-            {/* Sección del encabezado de la página */}
-            <header>
-                <h1>Esta es la página Sobre Nosotros...</h1> {/* Título principal que describe el propósito de la página */}
-            </header>
+           <header className="about-header">
+        <div className="about-content">
+            <div className="about-text">
+                <h1 className="about-title">Sobre Nosotras...</h1>
+                <p className="about-paragraph">
+                    Somos una madre e hija apasionadas por el arte de tejer. Desde muy temprana edad, 
+                    la madre enseñó a su hija a tejer con palillos, sentando las bases de un talento 
+                    que florecería con el tiempo. Juntas, comenzaron a crear sus propios amigurumis, 
+                    perfeccionando técnicas y aumentando la complejidad de los patrones. 
+                    Hoy en día, elaboran animales únicos, muchos de ellos vestidos con atuendos 
+                    diseñados para cada ocasión. Este emprendimiento es para nosotras una valiosa 
+                    oportunidad de compartir el fruto de nuestro trabajo y nuestra pasión.
+                </p>
+            </div>
+            <div className="about-image">
+                <img 
+                    src="/public/madre.jpg" 
+                    alt="Madre e hija tejiendo amigurumis" 
+                    className="about-img"
+                />
+            </div>
+        </div>
+    </header>
         </>
     );
 };

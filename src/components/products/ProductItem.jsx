@@ -18,7 +18,7 @@ import { formatPriceCLP } from "../../utils/formatPrice"; // Utilidad para forma
  */
 export const ProductItem = ({ product }) => {
     // Extraemos los datos del producto
-    const { name, photos, price, description } = product;
+    const { name, photos, description, price } = product;
 
     // Extraemos la función `addToCart` del contexto del carrito
     const { addToCart } = useContext(CartContext);  //agrra desde useContex y desde ahi saca el addTo cart
@@ -34,13 +34,11 @@ export const ProductItem = ({ product }) => {
 
             {/* Cuerpo del producto con price, descripción y botón */}
             <div className="product-item__body">
-                <p>precio: {formatPriceCLP(price)}</p> {/* Precio formateado */}
-                <p>{description}</p> {/* Descripción del producto */}
-                <button 
-                    onClick={() => addToCart(product)} // Agrega el producto al carrito
-                >
+                <p><strong>Reseña:</strong> {description}</p>
+                <p><strong>Precio:</strong> {formatPriceCLP(price)}</p>
+                    <button className="button" onClick={() => addToCart(product)}>
                     Agregar al Carrito
-                </button>
+                    </button>
             </div>
         </div>
     );

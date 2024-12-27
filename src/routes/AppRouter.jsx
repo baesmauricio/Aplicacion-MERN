@@ -18,6 +18,7 @@ import { LoginPage } from "../pages/LoginPage";
 
 // Importa el componente PrivateRoute, que se utiliza para proteger rutas privadas
 import { PrivateRoute } from "./PrivateRoute";
+import { ProductList } from "../components/products/ProductList";
 
 // Define el componente AppRouter, que gestiona las rutas de la aplicación
 export const AppRouter = () => {
@@ -33,6 +34,10 @@ export const AppRouter = () => {
           
           {/* Ruta para la página "About", cuando la URL sea '/about', se renderiza AboutPage */}
           <Route path="/about" element={<AboutPage />} />
+
+
+          <Route path="/product" element={<ProductList />} />
+
           
           {/* Ruta para la página de login, cuando la URL sea '/login', se renderiza LoginPage */}
           <Route path="/login" element={<LoginPage />} />

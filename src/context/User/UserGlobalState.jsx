@@ -124,7 +124,7 @@ export const AuthProvider = ({ children }) => {
               //  loginWithGoogle // Pasa la función de inicio de sesión con Google
             }}
         >
-            {children}  // Renderiza los componentes hijos dentro del AuthProvider
+            {children}  
         </AuthContext.Provider>
     )
 }

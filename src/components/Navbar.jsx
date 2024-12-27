@@ -12,7 +12,10 @@ export const Navbar = () => {
     return (
         <nav className="navbar"> {/* Contenedor principal de la barra de navegación */}
             {/* Sección del logo */}
-            <div className="navbar__logo">LOGO</div>
+            
+            <div className="navbar__logo">
+            <Link to="/"><img src="/public/logo.jpg" alt="Logo" className="navbar__logo-image" /></Link>
+            </div>
 
             {/* Sección de los enlaces de navegación */}
             <div className="navbar__items">
@@ -21,7 +24,7 @@ export const Navbar = () => {
                         <Link to="/">Inicio</Link>
                     </li>
                     <li> {/* Enlace a la página "Acerca De" */}
-                        <Link to="/about">Acerca De</Link>
+                        <Link to="/about">Nosotros</Link>
                     </li>
                     <li> {/* Enlace a la página de productos */}
                         <Link to="/product">Productos</Link>

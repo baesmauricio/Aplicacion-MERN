@@ -54,37 +54,38 @@ export const LoginForm = () => {
     };
 
     return (
-        <div>
-            <h2>Iniciar Sesión</h2>
+        <div className='login-form'>
+            <h2 className='login-title'>Iniciar Sesión</h2>
 
             {/* Muestra un mensaje de error si existe */}
             {error && <p style={{ color: 'red' }}>{error}</p>}
 
             {/* Formulario de inicio de sesión */}
-            <form onSubmit={handleLogin}>
-                <div>
-                    <label>Email:</label>
+            <form onSubmit={handleLogin} className='login-form-container'>
+                <div className='form-group'>
+                    <label className='form-label'>Email:</label>
                     <input 
                         type="email" // Tipo de input para validar formato de correo
                         value={email} // Valor actual del estado `email`
                         onChange={(e) => setEmail(e.target.value)} // Actualiza el estado cuando cambia el valor
                         required // Campo obligatorio
+                        className='form-input'
                     />
                 </div>
-                <div>
-                    <label>Contraseña:</label>
+                <div className='form-group'>
+                    <label className='form-label'>Contraseña:</label>
                     <input 
                         type="password" // Tipo de input para contraseñas
                         value={password} // Valor actual del estado `password`
                         onChange={(e) => setPassword(e.target.value)} // Actualiza el estado cuando cambia el valor
                         required // Campo obligatorio
+                        className='form-input'
                     />
                 </div>
-                <button type="submit">Iniciar Sesión</button> {/* Botón para enviar el formulario */}
+                <button type="submit" className='form-button'>Iniciar Sesión</button> {/* Botón para enviar el formulario */}
             </form>
 
-            {/* Botón para iniciar sesión con Google */}
-            <button onClick={handleGoogleLogin}>Iniciar Sesión con Google</button>
+          
         </div>
     );
 };

@@ -5,7 +5,8 @@ import { AboutPage } from './AboutPage'; // Página "Sobre Nosotros".
 // Exportamos los componentes importados en un único objeto para simplificar su uso en otros archivos.
 export {
     HomePage,
-    AboutPage
+    AboutPage,
+    
 };
 
 /* Descripción del código:
