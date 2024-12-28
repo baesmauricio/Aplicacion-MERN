@@ -40,3 +40,5 @@ token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzZkNzg5NmU1NmZkZjMz
   "price": 15000,
   "photos"
 }
+
+# adicion de caprta dist tras npm run build
