@@ -2,7 +2,10 @@
 import axios from 'axios';
 
 // Constante que define la URL base de la API
-const API_URL = "http://localhost:5000/api";
+
+// const API_URL = "http://localhost:5000/api";
+
+const API_URL = "https://aplicacion-backend-auth.onrender.com/api"
 
 // Creación de una instancia de Axios con una configuración inicial
 export const apiCLient = axios.create({
