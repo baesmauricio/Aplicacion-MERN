@@ -18,7 +18,7 @@ export const AboutPage = () => {
             </div>
             <div className="about-image">
                 <img 
-                    src="/public/madre.jpg" 
+                    src="/dist/assets/madre.jpg" 
                     alt="Madre e hija tejiendo amigurumis" 
                     className="about-img"
                 />
