@@ -42,3 +42,5 @@ token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzZkNzg5NmU1NmZkZjMz
 }
 
 # adicion de caprta dist tras npm run build
+"email":    mauriciobaes@example.com
+"password": password123

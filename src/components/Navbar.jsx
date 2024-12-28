@@ -14,7 +14,7 @@ export const Navbar = () => {
             {/* Sección del logo */}
             
             <div className="navbar__logo">
-            <Link to="/"><img src="/logo.jpg" alt="Logo" className="navbar__logo-image" /></Link>
+            <Link to="/product"><img src="/logo.jpg" alt="Logo" className="navbar__logo-image" /></Link>
             </div>
 
             {/* Sección de los enlaces de navegación */}
