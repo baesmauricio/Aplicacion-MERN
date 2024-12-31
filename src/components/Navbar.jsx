@@ -38,8 +38,9 @@ export const Navbar = () => {
                         !user ? (
                             // Si no hay usuario autenticado, mostrar el enlace de inicio de sesión.
                             <li>
-                                <Link to="/login">Login</Link>
+                                <Link to="/login">Cuenta</Link>
                             </li>
+                            
                         ) : (
                             // Si hay un usuario autenticado, mostrar su correo y el botón de cierre de sesión.
                             <div>

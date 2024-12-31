@@ -158,9 +158,9 @@
   }
   
   .button-pay:disabled {
-    background-color: #007bb2; /* Fondo para estado deshabilitado */
-    color: 000000; /* Texto más tenue */
-    cursor: not-allowed; /* Cursor deshabilitado */
+    background-color: #007bb2;
+    color: 000000; 
+    cursor: not-allowed; 
   }
 
  

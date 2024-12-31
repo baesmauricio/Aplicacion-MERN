@@ -65,16 +65,7 @@ export const AuthProvider = ({ children }) => {
         }
     }
 
-    // // Define la función loginWithGoogle para permitir inicio de sesión con Google
-    // const loginWithGoogle = async () => {
-    //     const provider = new GoogleAuthProvider(); // Crea un nuevo proveedor de Google
-    //     try {
-    //         await signInWithPopup(auth, provider); // Llama a Firebase para iniciar sesión con un popup de Google
-    //     } catch (error) {
-    //         console.error("Error al loguear con Google", error); // Si ocurre un error, lo imprime en consola
-    //     }
-    // }
-
+   
     // Define la función login para el inicio de sesión tradicional con credenciales
     const login = async (credentials) => {
         try {
@@ -107,7 +98,7 @@ export const AuthProvider = ({ children }) => {
         localStorage.removeItem('user');
 
         // Llama a Firebase para cerrar sesión en la autenticación de Firebase
-        await signOut(auth);
+        //await signOut(auth);
 
         // Despacha una acción al reducer para restablecer el estado de autenticación
         dispatch({ type: 'LOGOUT_USER' }); // Tipo de acción para cerrar sesión

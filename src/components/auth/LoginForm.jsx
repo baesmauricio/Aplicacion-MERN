@@ -43,15 +43,15 @@ export const LoginForm = () => {
      * Función `handleGoogleLogin`:
      * Autentica al usuario mediante Google y lo redirige a la página principal en caso de éxito.
      */
-    const handleGoogleLogin = async () => {
-        try {
-            // Llama a la función `loginWithGoogle` del contexto
-            await loginWithGoogle();
-            navigate('/'); // Redirige al usuario a la página principal
-        } catch (err) {
-            setError(err.message); // Captura y muestra el mensaje de error en caso de falla
-        }
-    };
+    // const handleGoogleLogin = async () => {
+    //     try {
+    //         // Llama a la función `loginWithGoogle` del contexto
+    //         await loginWithGoogle();
+    //         navigate('/'); // Redirige al usuario a la página principal
+    //     } catch (err) {
+    //         setError(err.message); // Captura y muestra el mensaje de error en caso de falla
+    //     }
+    // };
 
     return (
         <div className='login-form'>
