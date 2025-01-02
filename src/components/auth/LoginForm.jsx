@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom'; // Hook para manejar la navegaci
  */
 export const LoginForm = () => {
     // Extraemos funciones del contexto de autenticación
-    const { login, loginWithGoogle } = useContext(AuthContext);
+    const { login } = useContext(AuthContext);
 
     // Estados locales para manejar los campos del formulario y posibles errores
     const [email, setEmail] = useState(''); // Estado para el email ingresado por el usuario
@@ -33,9 +33,15 @@ export const LoginForm = () => {
         try {
             // Llama a la función `login` del contexto con los datos del formulario
             await login({ email, password });
+            // Limpia los campos de entrada después del login exitoso
+            setEmail('');
+            setPassword('');
             navigate('/'); // Redirige al usuario a la página principal
+
         } catch (err) {
             setError(err.message); // Captura y muestra el mensaje de error en caso de falla
+            setEmail('');
+            setPassword('');
         }
     };
 

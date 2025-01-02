@@ -9,9 +9,8 @@ import { useNavigate } from 'react-router-dom'; // Para redirigir al usuario
 export const ButtonLogout = () => {
     // Extraemos la función `logout` del contexto de autenticación
     const { logout } = useContext(AuthContext);
-    console.log(logout); // para probar porque es indefinido
-
-
+    console.log(logout); // Asegúrate de que no sea undefined
+    
     // Hook para redirigir al usuario después de cerrar sesión
     const navigate = useNavigate();
 

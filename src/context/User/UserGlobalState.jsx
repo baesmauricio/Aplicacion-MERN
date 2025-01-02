@@ -40,30 +40,54 @@ export const AuthProvider = ({ children }) => {
         fetchUser(); // Llama a la función fetchUser al montar el componente
     }, [fetchUser]); // El hook useEffect se ejecutará solo cuando fetchUser cambie
 
+
+
+    // register antiguo
     // Define la función register para registrar un nuevo usuario
+    // const register = async (userData) => {
+    //     try {
+    //         // Llama a la API para registrar al usuario
+    //         const response = await registerUser(userData);
+    //         const { token, user } = data; // Desestructura los valores token y user de la respuesta
+
+    //         // Si el token y el usuario existen en la respuesta, los guarda en localStorage
+    //         if (token && user) {
+    //             localStorage.setItem("token", token); // Guarda el token en localStorage
+    //             localStorage.setItem("user", JSON.stringify(user)); // Guarda el usuario en localStorage
+
+    //             // Despacha una acción al reducer para actualizar el estado de autenticación
+    //             dispatch({
+    //                 type: "REGISTER_USER", // Tipo de acción para registrar al usuario
+    //                 payload: { user, token }, // Payload con los datos del usuario y el token
+    //             });
+    //         } else {
+    //             throw new Error("Token o usuario no recibido"); // Si no se recibe token o usuario, lanza un error
+    //         }
+    //     } catch (error) {
+    //         throw new Error(`Error al registrar el usuario: ERROR: ${error}`) // Maneja errores al registrar el usuario
+    //     }
+    // }
+
+    
+    // register adaptado al back en donde solo devuelve el mensaje, corregido 02 2025
     const register = async (userData) => {
-        try {
-            // Llama a la API para registrar al usuario
-            const data = await registerUser(userData);
-            const { token, user } = data; // Desestructura los valores token y user de la respuesta
+    try {
+        // Llama a la API para registrar al usuario
+        const response = await registerUser(userData);
 
-            // Si el token y el usuario existen en la respuesta, los guarda en localStorage
-            if (token && user) {
-                localStorage.setItem("token", token); // Guarda el token en localStorage
-                localStorage.setItem("user", JSON.stringify(user)); // Guarda el usuario en localStorage
-
-                // Despacha una acción al reducer para actualizar el estado de autenticación
-                dispatch({
-                    type: "REGISTER_USER", // Tipo de acción para registrar al usuario
-                    payload: { user, token }, // Payload con los datos del usuario y el token
-                });
-            } else {
-                throw new Error("Token o usuario no recibido"); // Si no se recibe token o usuario, lanza un error
-            }
-        } catch (error) {
-            throw new Error(`Error al registrar el usuario: ERROR: ${error}`) // Maneja errores al registrar el usuario
+        // Si el registro fue exitoso, maneja solo el mensaje
+        if (response.message === "Usuario registrado con éxito") {
+            console.log("Usuario registrado correctamente, ahora puedes iniciar sesión.");
+        } else {
+            throw new Error("Error inesperado en el registro"); // Maneja respuestas no esperadas
         }
+    } catch (error) {
+        throw new Error(`Error al registrar el usuario: ${error.message}`);
     }
+};
+
+
+
 
    
     // Define la función login para el inicio de sesión tradicional con credenciales
