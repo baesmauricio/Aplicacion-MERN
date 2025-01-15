@@ -71,9 +71,8 @@
 *	npm i react-router-dom
 *	npm i axios
 *	npm i firebase
-*	npm i mercadopago en el back y npm 
-*	code .    VSC
-*	borro contenido de: index.css  => app.jsx => app.css
+*	npm i mercadopago  
+*	Borrar contenido de: index.css  => app.jsx => app.css
 *	mantener solo contenido de main.jsx
 * npm run dev    (para levantar el servidor)
 
