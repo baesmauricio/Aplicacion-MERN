@@ -62,20 +62,20 @@
 
 2. Requisitos y procedimiento:
 
-•	npm create vite@latest
-•	proyect name Aplicación Fullstack de Comercio Electrónico
-•	Seleccionar React
-•	Seleccionar javascript
-•	Cd Aplicación Fullstack de Comercio Electrónico
-•	npm i
-•	npm i react-router-dom
-•	npm i axios
-•	npm i firebase
-•	npm i mercadopago en el back y npm 
-•	code .    VSC
-•	borro contenido de: index.css  => app.jsx => app.css
-•	mantengo solo main.jsx
-•	npm run dev    para levantar el servidor
+* npm create vite@latest
+*	proyect name Aplicación Fullstack de Comercio Electrónico
+*	Seleccionar React
+*	Seleccionar javascript
+*	Cd Aplicación Fullstack de Comercio Electrónico
+*	npm i
+*	npm i react-router-dom
+*	npm i axios
+*	npm i firebase
+*	npm i mercadopago en el back y npm 
+*	code .    VSC
+*	borro contenido de: index.css  => app.jsx => app.css
+*	mantener solo contenido de main.jsx
+* npm run dev    (para levantar el servidor)
 
 
 
